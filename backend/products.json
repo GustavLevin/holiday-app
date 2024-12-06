@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Konstgjord Julgran",
+      "price": 499,
+      "description": "En realistisk konstgjord julgran med hållbar konstruktion och enkel montering.",
+      "stock": 20,
+      "image": "/assets/julgran.webp"
+    },
+    {
+      "id": "2",
+      "name": "Julbelysning LED",
+      "price": 149,
+      "description": "Energisnål LED-julbelysning med varmvit färg. Perfekt för både inom- och utomhusbruk.",
+      "stock": 50,
+      "image": "/assets/julbelysning.avif"
+    },
+    {
+      "id": "3",
+      "name": "Juldekorationer",
+      "price": 99,
+      "description": "En uppsättning juldekorationer som inkluderar bollar, stjärnor och glitter.",
+      "stock": 100,
+      "image": "/assets/juldekoration.webp"
+    },
+    {
+      "id": "4",
+      "name": "Nyårsfyrverkerier",
+      "price": 299,
+      "description": "En säker uppsättning nyårsfyrverkerier som passar hela familjen.",
+      "stock": 15,
+      "image": "/assets/fyrverkerier.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Adventsljusstake",
+      "price": 199,
+      "description": "Traditionell adventsljusstake med elektrisk belysning i trädesign.",
+      "stock": 30,
+      "image": "/assets/adventsljusstake.jpeg"
+    }
+  ],
+  "cart": [
+    {
+      "id": "3",
+      "name": "Juldekorationer",
+      "price": 99,
+      "image": "/assets/juldekoration.webp",
+      "quantity": 2
+    }
+  ]
+}
