@@ -5,11 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// JSON-server URL (din mock-server)
 const JSON_SERVER_URL = 'http://localhost:5021';
-
-// Lägg till en varukorg som hämtas från JSON-server
-// Varukorgen hanteras direkt via json-server i products.json
 
 // Hämta alla produkter
 app.get('/products', async (req, res) => {
@@ -27,7 +23,6 @@ app.get('/products', async (req, res) => {
   }
 });
 
-// Hämta en specifik produkt
 app.get('/products/:id', async (req, res) => {
   try {
     const response = await fetch(
@@ -88,7 +83,6 @@ app.post('/cart', async (req, res) => {
   }
 });
 
-// Hämta varukorgen
 app.get('/cart', async (req, res) => {
   try {
     const response = await fetch(`${JSON_SERVER_URL}/cart`);
@@ -143,7 +137,6 @@ app.put('/cart/:id', async (req, res) => {
   }
 });
 
-// Starta servern
 app.listen(5020, () => {
   console.log('Server running on http://localhost:5020');
 });
