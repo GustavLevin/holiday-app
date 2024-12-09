@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Product } from '../types/product';
 import styles from './ProductCard.module.css';
-import { useCart } from '../context/CartContext'; // Importera useCart
+import { useCart } from '../context/CartContext';
 import axios from 'axios';
 
 const ProductCard = ({ product }: { product: Product }) => {
-  const { addToCart } = useCart(); // Hämta addToCart från Context
+  const { addToCart } = useCart();
 
   const handleAddToCart = async () => {
     try {
@@ -16,7 +16,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         image: product.image,
         quantity: 1,
       });
-      addToCart(product); // Uppdaterar frontend-varukorgen
+      addToCart(product);
       alert(`${product.name} har lagts till i kundvagnen.`);
     } catch (error) {
       console.error('Kunde inte lägga till i kundvagnen:', error);
